@@ -30,3 +30,6 @@ gh/
 git/
 npm/
 .sudo/
+
+# Ignore files from plugins
+_*.fish
