@@ -1,0 +1,3 @@
+# enable shadow
+--shadow-blur-radius 30
+--output codepic.png

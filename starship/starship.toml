@@ -1,0 +1,157 @@
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$nodejs\
+$python\
+$c\
+${custom.cpp}\
+${custom.ts}\
+$rlang\
+$cmd_duration $jobs $time\
+$line_break\
+$character"""
+
+# Customs
+[custom.cpp]
+detect_extensions = ['cpp', 'cc', 'hpp']
+symbol = "󰙲 "
+format = "via [$symbol($output)]($style)"
+command = "clang++ --version | awk '/clang version/{print $4}'"
+style = "bold 149"
+disabled = false
+ignore_timeout = false
+
+# [custom.ts]
+# detect_extensions = ['ts', 'tsx']
+# symbol = "󰞼 "
+# format = "via [$symbol($output)]($style)"
+# command = "tsc --version | awk '{print $2}'"
+# style = "bold 45"
+# disabled = false
+# ignore_timeout = false
+
+# Common
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+
+# [time]
+# disabled = false
+# style = "bold white"
+# time_format = "%B%e, %T"
+
+[fill]
+symbol = " "
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " 󰌾"
+truncation_length = 4
+truncate_to_repo = false
+truncation_symbol = ".../"
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+ssh_only = false
+
+[java]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[nodejs]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[rust]
+symbol = "󱘗 "
