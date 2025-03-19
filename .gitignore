@@ -27,7 +27,6 @@ fishd.*
 
 # Ignore these
 gh/
-git/
 npm/
 .sudo/
 
