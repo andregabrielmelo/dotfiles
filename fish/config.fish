@@ -29,6 +29,9 @@ switch (uname)
     source (dirname (status --current-filename))/config-linux.fish
 end
 
+# Bindings
+source .config/fish/bindings.fish
+
 # Starship
 set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
 starship init fish | source 

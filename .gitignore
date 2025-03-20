@@ -32,3 +32,4 @@ npm/
 
 # Ignore files from plugins
 _*.fish
+fisher.fish 
